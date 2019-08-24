@@ -1,0 +1,75 @@
+import React from "react"
+import PropTypes from "prop-types"
+import { useStaticQuery, graphql } from "gatsby"
+
+import Menu from './menu'
+import MenuM from './menum'
+import Header from "./header"
+import "./layout.css"
+import styles from "./menu.module.css"
+import 'font-awesome/css/font-awesome.css'
+import stylesm from './mmenu.module.css'
+
+// Funksjon for navigasjonen
+var cnt = 0;  
+function openNav() {
+    if (cnt ===0){
+        document.getElementById("mySidenav").style.height = "250px";
+        document.getElementById("main").style.marginTop = "250px";
+        cnt = 1;
+    }
+    else{
+        document.getElementById("mySidenav").style.height = "30px";
+        document.getElementById("main").style.marginTop = "30px";
+        cnt = 0;
+    }
+}
+
+
+const Layout = ({ children }) => {
+  const data = useStaticQuery(graphql`
+    query SiteTitleQuery {
+      site {
+        siteMetadata {
+          title
+        }
+      }
+    }
+  `)
+if (window.innerWidth > 550){
+  return (
+    <>
+    <body className={styles.bdy}>
+      <Header siteTitle={data.site.siteMetadata.title} />
+      <Menu/>
+      <div className={styles.cont}>{children}</div>
+     </body>
+    </>
+  )
+}
+else{
+return(
+<body style={{
+overflow: 'hidden',
+}}>
+<div id="mySidenav" className={stylesm.topnav}>
+ <p><span onClick={ () => openNav()}>&#9776;&nbsp;&nbsp; Meny</span></p>
+ <MenuM/>
+</div>
+
+ <div id="main" className={stylesm.main} >
+      {children}
+  </div>
+ 
+  </body>
+
+)
+}
+
+}
+
+Layout.propTypes = {
+  children: PropTypes.node.isRequired,
+}
+
+export default Layout

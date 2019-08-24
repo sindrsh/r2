@@ -1,0 +1,88 @@
+
+:root{
+--menw: 200px; /*Vidde paa menyen*/
+--margl: calc(var(--menw) + 20px)
+}
+
+.bdy{
+	height: 1000px;
+	width: 100%;
+	background-color: rgb(251, 251, 233);
+}
+
+.qt{
+	font-family: "Lato", sans-serif;
+	font-size: 12px;
+	line-height: 18px;
+	margin-left:70px;
+}
+.qtimg{
+ vertical-align: middle; 		
+}
+.qtt{
+	text-align: right;
+}
+
+.cont{
+	font-family: "Lato", sans-serif;	
+	position: absolute;
+	/**background-color: rgb(251, 251, 233);*/
+	min-width: 200px;
+	max-width: 800px;
+    width: 52%;
+    font-size: 13pt;
+    margin-left: var(--margl);
+	top: 90px;
+}
+
+
+.menu{
+      width: var(--menw);
+      position: absolute;
+      top: 80px;
+      margin:0;
+      }
+      
+.ulmenu {
+    font-size: 18px;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    width: inherit;
+    /**background-color: rgb(0, 204, 255);*/
+    background-color: #ff8c2a;
+    height: auto;
+}
+.atch {
+    display: block;
+    color: blue;
+    text-decoration: none;
+}      
+
+.atch a{
+ color: blue;
+ text-decoration: none;
+}
+.atch a:hover {
+    color: black;
+}
+
+
+.btn{
+    display: block;
+    color: #000 ;
+    padding: 0.5em 1em;
+    text-decoration: none;
+}
+
+.btn:hover:not(.active) {
+    /*#555 */
+    background-color: #ccf5ff;
+    color: black;
+      } 
+.btna {
+    background-color: #39ac39;
+    color: black;
+}     
+  
+

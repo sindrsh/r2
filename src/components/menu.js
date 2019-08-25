@@ -32,15 +32,11 @@ const Menu = () => (
       to="/om/"
     >
     <i className="fa fa-lightbulb-o"></i>  &nbsp;&nbsp;&nbsp;Om prosjektet
-    </MenuLink> 
-<MenuLink
-   	 className={styles.btn}
-      to="/eks/"
-    >
-    <i className="fa fa-pencil"></i> &nbsp;&nbsp;Hmm
     </MenuLink>     
       </ul>
+    <div className={styles.btm}></div>  
     </div>
+    
 )
 
 export default Menu

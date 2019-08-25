@@ -4,7 +4,7 @@ const Header = ({ siteTitle }) => (
   <div
     style={{
       height: 80,
-      background: '#6600ff',
+      background: '#751aff',
       marginBottom: '1.45rem',
     }}
   >
@@ -25,7 +25,7 @@ const Header = ({ siteTitle }) => (
 				padding: 10,
       				color: 'rgb(251, 251, 233)',
             		textDecoration: 'none', 
-        }}>{siteTitle}</span> <span style={{fontSize:20,color:'rgb(251, 251, 233)'}}>- et gratis læreverk i R2</span>
+        }}>{siteTitle}</span> <span style={{fontSize:20,color:'white'}}>- et gratis læreverk i R2</span>
       </h1>
     </div>
   </div>

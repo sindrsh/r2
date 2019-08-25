@@ -42,6 +42,12 @@
       top: 80px;
       margin:0;
       }
+.btm{
+	width: var(--menw);
+	position: absolute;
+	height: 200px;
+	background-color: #668cff;
+}
       
 .ulmenu {
     font-size: 18px;
@@ -50,7 +56,7 @@
     padding: 0;
     width: inherit;
     /**background-color: rgb(0, 204, 255);*/
-    background-color: #ff8c2a;
+    background-color: #668cff;
     height: auto;
 }
 .atch {
@@ -81,7 +87,7 @@
     color: black;
       } 
 .btna {
-    background-color: #39ac39;
+    background-color: #4db8ff;
     color: black;
 }     
   

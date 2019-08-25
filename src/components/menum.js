@@ -11,7 +11,7 @@ const MenuMlink = props =>
     </Link>
 
 const MenuM = () => (
-    <div  >
+    <div>
 <Link
       exact to="/"
     >
@@ -28,13 +28,7 @@ const MenuM = () => (
       to="/om/"
     >
     <i className="fa fa-lightbulb-o"></i>  &nbsp;&nbsp;&nbsp;Om prosjektet
-    </MenuMlink> 
-<MenuMlink
-   	 className={styles.btn}
-      to="/eks/"
-    >
-    <i className="fa fa-pencil"></i> &nbsp;&nbsp;Hmm
-    </MenuMlink>     
+    </MenuMlink>      
     </div>
 )
 

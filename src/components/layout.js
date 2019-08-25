@@ -14,8 +14,8 @@ import stylesm from './mmenu.module.css'
 var cnt = 0;  
 function openNav() {
     if (cnt ===0){
-        document.getElementById("mySidenav").style.height = "250px";
-        document.getElementById("main").style.marginTop = "250px";
+        document.getElementById("mySidenav").style.height = "200px";
+        document.getElementById("main").style.marginTop = "200px";
         cnt = 1;
     }
     else{
@@ -36,6 +36,8 @@ const Layout = ({ children }) => {
       }
     }
   `)
+if(typeof window !== 'undefined'){
+  
 if (window.innerWidth > 550){
   return (
     <>
@@ -65,7 +67,18 @@ overflow: 'hidden',
 
 )
 }
-
+}
+else{
+return (
+    <>
+    <body className={styles.bdy}>
+      <Header siteTitle={data.site.siteMetadata.title} />
+      <Menu/>
+      <div className={styles.cont}>{children}</div>
+     </body>
+    </>
+  )
+}
 }
 
 Layout.propTypes = {

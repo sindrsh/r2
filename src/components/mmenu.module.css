@@ -36,7 +36,7 @@ display: block;
     font-size: 16px;    
     transition: margin-top .5s;
     padding: 16px;
-    padding-right: 14px;
+    padding-right: 16px;
     margin-top: calc(var(--menh));
     font-family: "Lato", sans-serif; 
     background-color: rgb(251, 251, 233);

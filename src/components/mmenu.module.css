@@ -1,5 +1,5 @@
 :root{
---menh: 30px; /*Starthoyde paa menyen*/
+--menh: 50px; /*Starthoyde paa menyen*/
 }
 
 .topnav {
@@ -8,6 +8,7 @@
     width: 100%;
     z-index: 1;
     top: 0;
+    padding-top: 10px;
     background-color: #668cff;
     overflow: hidden;
     transition: 0.5s;

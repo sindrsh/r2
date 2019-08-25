@@ -1,6 +1,8 @@
 import React from "react"
 import PropTypes from "prop-types"
 import { useStaticQuery, graphql } from "gatsby"
+import { FaBars } from 'react-icons/fa';
+
 
 import Menu from './menu'
 import MenuM from './menum'
@@ -18,8 +20,8 @@ function openNav() {
         cnt = 1;
     }
     else{
-        document.getElementById("mySidenav").style.height = "30px";
-        document.getElementById("main").style.marginTop = "30px";
+        document.getElementById("mySidenav").style.height = "50px";
+        document.getElementById("main").style.marginTop = "50px";
         cnt = 0;
     }
 }
@@ -54,7 +56,7 @@ return(
 overflow: 'hidden',
 }}>
 <div id="mySidenav" className={stylesm.topnav}>
- <p><span onClick={ () => openNav()}>&#9776;&nbsp;&nbsp; Meny</span></p>
+ <p><span onClick={ () => openNav()}><FaBars />&nbsp;&nbsp; Meny</span></p>
  <MenuM/>
 </div>
 

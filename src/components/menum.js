@@ -18,19 +18,19 @@ const MenuM = () => (
 <Link
       exact to="/"
     >
-    <i></i> <FaHome />&nbsp;Startside
+    <i></i> <FaHome style={{verticalAlign: '-2px'}}/>&nbsp;Startside
     </Link>
 <MenuMlink
    	 className={styles.btn}
       to="/files/"
     >
-    <i></i> <FaPaperclip />&nbsp;Filer
+    <i></i> <FaPaperclip style={{verticalAlign: '-3px'}}/>&nbsp;Filer
     </MenuMlink> 
 <MenuMlink
    	 className={styles.btn}
       to="/om/"
     >
-    <i></i>  <FaLightbulb />&nbsp;Om prosjektet
+    <i></i>  <FaLightbulb style={{verticalAlign: '-3px'}}/>&nbsp;Om prosjektet
     </MenuMlink>      
     </div>
 )

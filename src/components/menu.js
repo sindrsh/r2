@@ -23,19 +23,19 @@ const Menu = () => (
       exact to="/"
       activeClassName={styles.btna}
     >
-    <i></i> <FaHome /> &nbsp;Startside
+    <i></i> <FaHome style={{verticalAlign: '-2px'}}/> &nbsp;Startside
     </Link>
 <MenuLink
    	 className={styles.btn}
       to="/files/"
     >
-    <i></i> <FaPaperclip /> &nbsp;Filer
+    <i></i> <FaPaperclip style={{verticalAlign: '-3px'}}/> &nbsp;Filer
     </MenuLink> 
 <MenuLink
    	 className={styles.btn}
       to="/om/"
     >
-    <i></i> <FaLightbulb /> &nbsp;Om prosjektet
+    <i></i> <FaLightbulb style={{verticalAlign: '-3px'}}/> &nbsp;Om prosjektet
     </MenuLink>     
       </ul>
     <div className={styles.btm}></div>  

@@ -7,6 +7,7 @@ import { FaBars } from 'react-icons/fa';
 import Menu from './menu'
 import MenuM from './menum'
 import Header from "./header"
+import HeaderM from "./headerm"
 import "./layout.css"
 import styles from "./menu.module.css"
 import stylesm from './mmenu.module.css'
@@ -55,8 +56,9 @@ return(
 <body style={{
 overflow: 'hidden',
 }}>
+<HeaderM siteTitle={data.site.siteMetadata.title} />
 <div id="mySidenav" className={stylesm.topnav}>
- <p><span onClick={ () => openNav()}><FaBars />&nbsp;&nbsp; Meny</span></p>
+ <p><span onClick={ () => openNav()}><FaBars style={{verticalAlign: '-4px'}}/>&nbsp;&nbsp; Meny</span></p>
  <MenuM/>
 </div>
 

@@ -15,19 +15,19 @@ const MenuM = () => (
 <Link
       exact to="/"
     >
-    <i className="fa fa-home"></i> &nbsp;&nbsp;Startside
+    <i></i> &nbsp;&nbsp;Startside
     </Link>
 <MenuMlink
    	 className={styles.btn}
       to="/files/"
     >
-    <i className="fa fa-paperclip"></i> &nbsp;&nbsp;Filer
+    <i></i> &nbsp;&nbsp;Filer
     </MenuMlink> 
 <MenuMlink
    	 className={styles.btn}
       to="/om/"
     >
-    <i className="fa fa-lightbulb-o"></i>  &nbsp;&nbsp;&nbsp;Om prosjektet
+    <i></i>  &nbsp;&nbsp;&nbsp;Om prosjektet
     </MenuMlink>      
     </div>
 )

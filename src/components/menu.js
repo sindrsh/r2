@@ -19,19 +19,19 @@ const Menu = () => (
       exact to="/"
       activeClassName={styles.btna}
     >
-    <i className="fa fa-home"></i> &nbsp;&nbsp;Startside
+    <i></i> &nbsp;&nbsp;Startside
     </Link>
 <MenuLink
    	 className={styles.btn}
       to="/files/"
     >
-    <i className="fa fa-paperclip"></i> &nbsp;&nbsp;Filer
+    <i></i> &nbsp;&nbsp;Filer
     </MenuLink> 
 <MenuLink
    	 className={styles.btn}
       to="/om/"
     >
-    <i className="fa fa-lightbulb-o"></i>  &nbsp;&nbsp;&nbsp;Om prosjektet
+    <i></i>  &nbsp;&nbsp;&nbsp;Om prosjektet
     </MenuLink>     
       </ul>
     <div className={styles.btm}></div>  

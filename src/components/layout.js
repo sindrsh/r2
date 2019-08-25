@@ -7,7 +7,6 @@ import MenuM from './menum'
 import Header from "./header"
 import "./layout.css"
 import styles from "./menu.module.css"
-import 'font-awesome/css/font-awesome.css'
 import stylesm from './mmenu.module.css'
 
 // Funksjon for navigasjonen

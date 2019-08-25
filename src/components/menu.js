@@ -1,6 +1,10 @@
 import React from 'react'
 import Link from "gatsby-link"
 import styles from "./menu.module.css"
+import { FaHome } from 'react-icons/fa';
+import { FaLightbulb } from 'react-icons/fa';
+import { FaPaperclip } from 'react-icons/fa';
+
 
 // For menyen:
 const MenuLink = props =>
@@ -19,19 +23,19 @@ const Menu = () => (
       exact to="/"
       activeClassName={styles.btna}
     >
-    <i></i> &nbsp;&nbsp;Startside
+    <i></i> <FaHome /> &nbsp;Startside
     </Link>
 <MenuLink
    	 className={styles.btn}
       to="/files/"
     >
-    <i></i> &nbsp;&nbsp;Filer
+    <i></i> <FaPaperclip /> &nbsp;Filer
     </MenuLink> 
 <MenuLink
    	 className={styles.btn}
       to="/om/"
     >
-    <i></i>  &nbsp;&nbsp;&nbsp;Om prosjektet
+    <i></i> <FaLightbulb /> &nbsp;Om prosjektet
     </MenuLink>     
       </ul>
     <div className={styles.btm}></div>  

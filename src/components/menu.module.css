@@ -1,6 +1,6 @@
 
 :root{
---menw: 200px; /*Vidde paa menyen*/
+--menw: 180px; /*Vidde paa menyen*/
 --margl: calc(var(--menw) + 20px)
 }
 
@@ -17,7 +17,7 @@
 
 .qt{
 	font-family: "Lato", sans-serif;
-	font-size: 14px;
+	font-size: 12px;
 	line-height: 18px;
 	margin-left:70px;
 }
@@ -34,8 +34,8 @@
 	/**background-color: rgb(251, 251, 233);*/
 	min-width: 200px;
 	max-width: 800px;
-    width: 52%;
-    font-size: 16pt;
+    width: 48%;
+    font-size: 12pt;
     margin-left: var(--margl);
 	top: 90px;
 }
@@ -55,7 +55,7 @@
 }
       
 .ulmenu {
-    font-size: 20px;
+    font-size: 18px;
     list-style-type: none;
     margin: 0;
     padding: 0;

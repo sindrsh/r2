@@ -1,5 +1,6 @@
 import React from 'react'
-
+import { FaEnvelope } from 'react-icons/fa';
+import { FaCopyright } from 'react-icons/fa';
 
 const Om = () => (
 <div>
@@ -10,9 +11,10 @@ som kan utvikle seg etter medvirkning og tilbakemelding fra lærere, elever og a
 gi lyd! 
 </p>
 
-<p> <i className="fa fa-envelope"> </i> sindre.heggen@gmail.com </p> 
 
-<p> <i className="fa fa-registered"></i> Verket er lisensiert under en <a rel="license" href="http://creativecommons.org/licenses/by/4.0/">Creative Commons Navngivelse 4.0 Internasjonal lisens</a>. </p>
+<p> <FaEnvelope style={{verticalAlign: '-2px'}}/> sindre.heggen@gmail.com </p> 
+
+<p> <FaCopyright style={{verticalAlign: '-2px'}}/> Verket er lisensiert under en <a rel="license" href="http://creativecommons.org/licenses/by/4.0/">Creative Commons Navngivelse 4.0 Internasjonal lisens</a>. </p>
 
 </div>
 )
